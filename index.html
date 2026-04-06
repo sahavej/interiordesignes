@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+
+<meta name="description" content="Luxury interior design studio creating modern, elegant spaces.">
+<meta property="og:title" content="Interior Studio">
+<meta property="og:image" content="your-image.jpg">
+    <title>Interior Design | SEHARUA Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h5, .brand-font { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+        #loader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:white;
+    z-index:9999;
+}
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 overflow-x-hidden">
+    <div id="loader"></div>
+
+ <nav class="relative flex justify-between items-center px-6 md:px-10 py-5 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+
+    <div class="text-2xl font-bold tracking-tighter uppercase brand-font">
+        Interior Studio
+    </div>
+
+    <!-- MENU -->
+ <ul id="mobile-menu" 
+class="hidden opacity-0 transition-all duration-300 ease-in-out translate-y-[-10px]
+absolute top-full left-0 w-full bg-white text-center flex flex-col gap-8 py-6
+md:flex md:opacity-100 md:static md:flex-row md:w-auto md:bg-transparent md:py-0 md:gap-8">
+
+    <li><a href="#projects" class="block">Projects</a></li>
+    <li><a href="#services" class="block">Services</a></li>
+    <li><a href="#testimonials" class="block">Testimonials</a></li>
+    <li>
+        <a href="#contact" class="inline-block bg-black text-white px-6 py-2.5">
+            Enquire
+        </a>
+    </li>
+
+</ul>
+
+    <!-- BUTTON -->
+    <button id="menu-btn" class="md:hidden text-black text-2xl">
+        ☰
+    </button>
+
+</nav>
+
+    <section class="relative h-[85vh] flex items-center justify-center bg-stone-200 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Modern Interior" class="absolute inset-0 w-full h-full object-cover opacity-80" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-8xl mb-6 text-white drop-shadow-2xl font-bold" data-aos="fade-up" data-aos-delay="200">Aesthetics. Comfort.</h1>
+            <p class="text-lg md:text-2xl text-stone-100 max-w-3xl mx-auto mb-10 font-light" data-aos="fade-up" data-aos-delay="400">Transforming your vision into luxurious, functional spaces. Every detail tells your story.</p>
+            <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#projects" class="bg-white text-black px-12 py-4.5 text-xs font-bold uppercase tracking-widest hover:bg-stone-100 transition shadow-2xl inline-block">Explore Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 md:px-10 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-16 text-center">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold mb-5 italic uppercase text-amber-900">Residential</h3>
+                <p class="text-stone-600 font-light leading-relaxed text-base">From cozy apartments to sprawling villas, we design modern homes that balance luxury with personal warmth and ease.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-2xl font-semibold mb-5 italic uppercase text-amber-900">Commercial</h3>
+                <p class="text-stone-600 font-light leading-relaxed text-base">We create inspiring, professional workspaces designed to enhance productivity, reflect brand values, and leave an impression.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500">
+                <h3 class="text-2xl font-semibold mb-5 italic uppercase text-amber-900">3D Rendering</h3>
+                <p class="text-stone-600 font-light leading-relaxed text-base">Visualize your future space down to the texture with high-fidelity 4K renders before execution begins, ensuring total alignment.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-24 bg-white">
+    
+    <div class="px-6 md:px-10 mb-12">
+        <h2 class="text-5xl font-bold">Featured Creations</h2>
+        <p class="text-stone-500 mt-2">A glimpse into spaces that evoke emotion.</p>
+    </div>
+
+    <!-- ONE GRID ONLY -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-10">
+
+        <!-- CARD -->
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="bedroom-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Living Room</p>
+                <h4 class="text-2xl font-bold brand-font">Minimalist Haven</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="kitchen-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Kitchen</p>
+                <h4 class="text-2xl font-bold brand-font">The Modern Chef</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="TV-unit-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Bedroom</p>
+                <h4 class="text-2xl font-bold brand-font">Serene Suite</h4>
+            </div>
+        </div>
+         <div class="group relative overflow-hidden h-[450px]">
+            <img src="bedroom-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Living Room</p>
+                <h4 class="text-2xl font-bold brand-font">Minimalist Haven</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="kitchen-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Kitchen</p>
+                <h4 class="text-2xl font-bold brand-font">The Modern Chef</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="TV-unit-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Bedroom</p>
+                <h4 class="text-2xl font-bold brand-font">Serene Suite</h4>
+            </div>
+        </div>
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="bedroom-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Living Room</p>
+                <h4 class="text-2xl font-bold brand-font">Minimalist Haven</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="kitchen-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Kitchen</p>
+                <h4 class="text-2xl font-bold brand-font">The Modern Chef</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="TV-unit-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Bedroom</p>
+                <h4 class="text-2xl font-bold brand-font">Serene Suite</h4>
+            </div>
+        </div>
+         <div class="group relative overflow-hidden h-[450px]">
+            <img src="bedroom-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Living Room</p>
+                <h4 class="text-2xl font-bold brand-font">Minimalist Haven</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="kitchen-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Kitchen</p>
+                <h4 class="text-2xl font-bold brand-font">The Modern Chef</h4>
+            </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[450px]">
+            <img src="TV-unit-img.jpeg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+            <div class="absolute bottom-0 left-0 p-8 text-white bg-gradient-to-t from-black/80 to-transparent w-full">
+                <p class="text-xs uppercase tracking-widest font-semibold opacity-80">Bedroom</p>
+                <h4 class="text-2xl font-bold brand-font">Serene Suite</h4>
+            </div>
+        </div>
+
+        <!-- ADD ALL OTHER IMAGES SAME WAY -->
+
+       </div>
+
+   </section>
+
+    <section id="testimonials" class="py-24 bg-stone-100 px-6 md:px-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-20 italic text-amber-950" data-aos="fade-down">Client Stories</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-12 shadow-xl border-t-8 border-amber-800 rounded-lg text-left" data-aos="fade-right" data-aos-offset="200">
+                    <p class="text-stone-600 italic mb-8 leading-relaxed text-lg">"The transformation was magical. They didn't just design a house, they crafted our dream home. The detail and passion are unmatched. Highly recommend!"</p>
+                    <h5 class="font-bold uppercase tracking-widest text-sm brand-font text-amber-950">- Ankit & Priyanka Sharma</h5>
+                </div>
+                <div class="bg-white p-12 shadow-xl border-t-8 border-amber-800 rounded-lg text-left" data-aos="fade-left" data-aos-offset="200">
+                    <p class="text-stone-600 italic mb-8 leading-relaxed text-lg">"They captured our corporate brand identity perfectly. The new office design has not only increased productivity but also boosted employee morale immensely."</p>
+                    <h5 class="font-bold uppercase tracking-widest text-sm brand-font text-amber-950">- Rohan Mehta, CEO, TechInnovate</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 md:px-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+        <div data-aos="fade-right">
+            <h2 class="text-6xl font-bold mb-8 brand-font">Let's Discuss <br> Your Project.</h2>
+            <p class="text-stone-500 mb-12 max-w-md text-lg font-light leading-relaxed">Your dream space is just a message away. Tell us about your thoughts, requirements, or vision.</p>
+            
+            <div class="space-y-6">
+                <p class="flex items-center gap-5 text-sm font-semibold tracking-widest uppercase italic">
+                    <span class="text-amber-800 underline">Email:</span> hello@studio.com
+                </p>
+                <p class="flex items-center gap-5 text-sm font-semibold tracking-widest uppercase italic">
+                    <span class="text-amber-800 underline">WhatsApp:</span> +91 98XXX XXXXX
+                </p>
+                <a href="https://wa.me/91XXXXXXXXXX" 
+class="inline-block mt-6 bg-green-500 text-white px-6 py-3 text-sm uppercase tracking-widest">
+Chat on WhatsApp
+</a>
+            </div>
+        </div>
+
+        <form class="space-y-8 bg-white p-10 shadow-2xl rounded-2xl border border-stone-100" data-aos="fade-left">
+            <div class="grid md:grid-cols-2 gap-8">
+                <input type="text" placeholder="Full Name" class="w-full bg-transparent border-b-2 border-stone-200 py-4 focus:border-amber-800 outline-none transition px-2">
+                <input type="email" placeholder="Email Address" class="w-full bg-transparent border-b-2 border-stone-200 py-4 focus:border-amber-800 outline-none transition px-2">
+            </div>
+            <select class="w-full bg-transparent border-b-2 border-stone-200 py-4 focus:border-amber-800 outline-none transition text-stone-500 px-2">
+                <option>Select Project Type</option>
+                <option>Residential Interior</option>
+                <option>Commercial Space</option>
+                <option>Complete Renovation</option>
+            </select>
+            <textarea rows="5" placeholder="Briefly describe your space..." class="w-full bg-transparent border-b-2 border-stone-200 py-4 focus:border-amber-800 outline-none transition px-2"></textarea>
+            <button type="submit" class="w-full bg-black text-white py-5 font-bold uppercase tracking-widest hover:bg-stone-800 transition rounded-md text-sm">Send Consultation Request</button>
+        </form>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-500 py-16 px-6 md:px-10 text-center border-t border-stone-800">
+        <p class="text-lg font-bold brand-font text-white uppercase tracking-tighter mb-4">Interior Studio</p>
+        <p class="text-xs tracking-widest uppercase">&copy; 2026 Interior Studio. All Rights Reserved. Crafted with care.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Initialize with global settings
+        AOS.init({
+            offset: 120, // scroll offset (in px)
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 900, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out-cubic', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+        });
+    </script>
+  <script>
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    setTimeout(() => {
+        menu.classList.toggle("opacity-0");
+        menu.classList.toggle("opacity-100");
+        menu.classList.toggle("translate-y-0");
+menu.classList.toggle("translate-y-[-10px]");
+    }, 10);
+});
+</script>
+<script>
+function sendToWhatsApp(){
+    let text = "Hello, I want interior design service";
+    window.open("https://wa.me/91XXXXXXXXXX?text=" + encodeURIComponent(text));
+}
+</script>
+<script>
+window.addEventListener("load",()=>{
+    document.getElementById("loader").style.display="none";
+});
+
+</script>
+
+
+</body>
+</html>
